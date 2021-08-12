@@ -1,0 +1,165 @@
+/* about section */
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 150px;
+}
+
+.skills,
+.edu,
+.works {
+  flex: 1;
+}
+
+.about ul {
+  margin-top: 20px;
+}
+
+.about .title {
+  color: #fc6a65;
+  /* color: #111111; */
+  letter-spacing: 4px;
+  font-size: 0.75em;
+  font-weight: 400;
+  font-variant: small-caps;
+}
+
+.skills .title::before,
+.edu .title::before,
+.works .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  background-color: #fc6a65;
+  /* background-color: #ffeb4a; */
+  opacity: 40%;
+}
+
+.about .skills .title::before {
+  width: 85px;
+}
+
+.about .edu .title::before {
+  width: 102px;
+}
+
+.about .works .title::before {
+  width: 167px;
+}
+
+.about .subTitle,
+.about p {
+  color: #cacaca;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.about .sec,
+.about .thi {
+  margin-top: 25px;
+}
+
+.about .cont {
+  line-height: 26px;
+}
+
+.edu {
+  margin: 0 20px;
+}
+
+/* work section */
+.work {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 50px 200px;
+}
+
+/* card 부분 */
+.work .card {
+  height: auto;
+}
+
+.work .img {
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  background: #000000;
+  cursor: pointer;
+}
+
+.work .img img {
+  width: 100%;
+  height: 100%;
+  transition: transform 3s;
+}
+
+.work .img:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.work .card .text {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.work .card:hover .text {
+  opacity: 1;
+}
+
+.work .card:first-child,
+.work .card:nth-child(4),
+.work .card:last-child {
+  flex: 100%;
+  margin-bottom: 30px;
+}
+
+.work .card:nth-child(2),
+.work .card:nth-child(3) {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.work .card:nth-child(3) {
+  margin-left: 30px;
+}
+
+.work .card:last-child {
+  margin-bottom: 0;
+}
+
+/* up button */
+.btn-top {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid #9f9fa2; */
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.btn-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #9f9fa2;
+}
+
+.btn-top:hover i {
+  color: #fc6a65;
+}

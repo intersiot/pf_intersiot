@@ -1,0 +1,23 @@
+/* index footer */
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1fr;
+  padding: 60px 150px;
+  background-color: #363139;
+}
+
+footer .cont {
+  color: #cacaca;
+  /* 자간 설정 */
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+footer .cont.sec a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

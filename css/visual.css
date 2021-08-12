@@ -1,0 +1,319 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+
+/* first visual section */
+.visual {
+  height: 100vh;
+  background-image: url(../img/visual_bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  overflow: hidden;
+  /* animation: backgroundAni 5s infinite;
+  animation-direction: alternate; */
+}
+
+.visual p {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.5s;
+}
+
+.visual p::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -10px;
+  height: 110%;
+  transform: right;
+  background-color: #fc6a65;
+  opacity: 0.1;
+  animation: pAni 15s alternate;
+}
+
+@keyframes pAni {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 105%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* car css */
+.car {
+  position: absolute;
+  bottom: 15px;
+  animation: carAni 15s ease-in-out infinite;
+}
+
+@keyframes carAni {
+  0% {
+    left: -5%;
+  }
+  100% {
+    left: 110%;
+  }
+}
+
+/* cloud css */
+.visual .cloud-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.visual .cloud-wrap .cloud {
+  position: absolute;
+}
+
+.cloud:first-child {
+  top: 150px;
+  right: 0;
+  animation: cloudOneAni ease-out 60s infinite;
+}
+
+.cloud:nth-child(2) {
+  top: 280px;
+  right: 0;
+  animation: cloudTwoAni ease-out 70s infinite;
+}
+
+.cloud:last-child {
+  top: 330px;
+  right: 0;
+  animation: cloudThreeAni ease-out 70s infinite;
+}
+
+/* visual cloud animation */
+@keyframes cloudOneAni {
+  0% {
+    right: -5%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+
+@keyframes cloudTwoAni {
+  0% {
+    right: -25%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+@keyframes cloudThreeAni {
+  0% {
+    right: -45%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+
+/* bird css */
+.bird-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bird {
+  position: absolute;
+  width: 22px;
+  height: 4px;
+}
+
+/* bird 1 css */
+.bird:nth-child(1) {
+  top: 100px;
+  left: 450px;
+  animation: birdAni1 7s alternate infinite;
+}
+
+.bird:nth-child(1)::before {
+  content: "";
+  width: 11px;
+  height: 4px;
+  background-image: url(/img/bird_1.png);
+  position: absolute;
+  transform: left bottom;
+  animation: birdAni2 0.6s infinite alternate;
+}
+
+.bird:nth-child(1)::after {
+  content: "";
+  width: 11px;
+  height: 4px;
+  left: 6px;
+  background-image: url(/img/bird_2.png);
+  position: absolute;
+  transform: right bottom;
+  opacity: 0.5;
+  animation: birdAni3 0.6s infinite alternate;
+}
+
+/* bird 1 animation */
+@keyframes birdAni1 {
+  0% {
+    top: 100px;
+    margin-left: 0;
+  }
+  100% {
+    top: 150px;
+    margin-left: 80px;
+  }
+}
+
+@keyframes birdAni2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes birdAni3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+/* bird 2 css */
+.bird:nth-child(2) {
+  top: 50px;
+  right: 22%;
+  animation: birdAni4 6s alternate infinite;
+}
+
+.bird:nth-child(2)::before {
+  content: "";
+  width: 11px;
+  height: 4px;
+  background-image: url(/img/bird_1.png);
+  position: absolute;
+  transform: left bottom;
+  animation: birdAni2 0.6s infinite alternate;
+}
+
+.bird:nth-child(2)::after {
+  content: "";
+  width: 11px;
+  height: 4px;
+  left: 6px;
+  background-image: url(/img/bird_2.png);
+  position: absolute;
+  transform: right bottom;
+  opacity: 0.5s;
+  animation: birdAni3 0.6s infinite alternate;
+}
+
+/* bird 2 animation */
+@keyframes birdAni4 {
+  0% {
+    top: 50px;
+    margin-right: 0;
+  }
+  100% {
+    top: 100px;
+    margin-right: 80px;
+  }
+}
+
+/* bird 3 */
+.bird:nth-child(3) {
+  top: 460px;
+  left: 300px;
+  animation: birdAni5 9s alternate infinite;
+}
+
+.bird:nth-child(3)::before {
+  content: "";
+  width: 11px;
+  height: 4px;
+  background-image: url(/img/bird_1.png);
+  position: absolute;
+  transform: left bottom;
+  animation: birdAni2 0.6s infinite alternate;
+}
+
+.bird:nth-child(3)::after {
+  content: "";
+  width: 11px;
+  height: 4px;
+  left: 6px;
+  position: absolute;
+  background-image: url(/img/bird_2.png);
+  transform: right bottom;
+  animation: birdAni3 0.6s infinite alternate;
+  opacity: 0.5;
+}
+
+/* bird 3 animation */
+@keyframes birdAni5 {
+  0% {
+    top: 460px;
+    margin-left: 0;
+  }
+  100% {
+    top: 550px;
+    margin-left: 50px;
+  }
+}
+
+/* bird 4 */
+.bird:nth-child(4) {
+  top: 320px;
+  right: 200px;
+  animation: birdAni6 8s alternate infinite;
+}
+
+.bird:nth-child(4)::before {
+  content: "";
+  width: 11px;
+  height: 4px;
+  background-image: url(/img/bird_1.png);
+  position: absolute;
+  transform: left bottom;
+  animation: birdAni2 0.6s infinite alternate;
+}
+
+.bird:nth-child(4)::after {
+  content: "";
+  width: 11px;
+  height: 4px;
+  left: 6px;
+  background-image: url(/img/bird_2.png);
+  position: absolute;
+  opacity: 0.5;
+  animation: birdAni3 0.6s infinite alternate;
+}
+
+/* bird 4 animation */
+@keyframes birdAni6 {
+  0% {
+    top: 320px;
+    margin-right: 0;
+  }
+  100% {
+    top: 420px;
+    margin-right: 100px;
+  }
+}

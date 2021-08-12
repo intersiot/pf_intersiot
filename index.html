@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- og태그, favicon -->
+    <meta property="og:title" content="포트폴리오 사이트" />
+    <meta property="og:description" content="포트폴리오 사이트 입니다." />
+    <meta property="og:image" content="" />
+    <!-- Web fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Masonry Grid -->
+    <!-- <script src="/path/to/masonry.pkgd.min.js"></script> -->
+    <!-- CSS import -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/visual.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <!-- title -->
+    <title>Portfolio | Publisher and Junior Developer</title>
+</head>
+
+<body>
+    <header>
+        <!-- 로고부분 -->
+        <div class="logo">
+            <img src="img/pf_logo.png" alt="logo_image" />
+            <a href="index.html"></a>
+        </div>
+        <!-- 햄버거 메뉴 부분 -->
+        <div class="hambuger">
+            <div class="bar first"></div>
+            <div class="bar second"></div>
+            <div class="bar third"></div>
+        </div>
+    </header>
+    <!-- 메인으로 보여지는 섹션 -->
+    <section class="visual">
+        <p>Hello,<br />I'm Song.</p>
+        <!-- 구름 이미지 -->
+        <div class="cloud-wrap">
+            <div class="cloud"><img src="img/cloud_1.png" alt="image_cloud" /></div>
+            <div class="cloud"><img src="img/cloud_2.png" alt="image_cloud" /></div>
+            <div class="cloud"><img src="img/cloud_3.png" alt="image_cloud" /></div>
+        </div>
+        <!-- 새들 -->
+        <div class="bird-wrap">
+            <div class="bird"></div>
+            <div class="bird"></div>
+            <div class="bird"></div>
+            <div class="bird"></div>
+        </div>
+        <!-- 좌에서 우로 움직이는 자동차 -->
+        <div class="car"><img src="img/car.png" alt="image_car" /></div>
+    </section>
+    <!-- about 부분 -->
+    <section class="about">
+        <div class="skills">
+            <div class="title">SKILLSET</div>
+            <ul>
+                <div class="subTitle">Development</div>
+                <span class="cont">HTML, CSS, JavaScript, jQuery, JAVA, Python, Android, Kotiln and ReactJS(공부중)</span>
+                <div class="subTitle sec">Design</div>
+                <span class="cont">Adobe Photoshop, Illustrator</span>
+            </ul>
+        </div>
+        <div class="edu">
+            <div class="title">EDUCATION</div>
+            <ul>
+                <div class="subTitle">2020 - 2021</div>
+                <span class="cont">스파르타 코딩클럽 웹개발</span>
+                <div class="subTitle sec">2019 - 2020</div>
+                <span class="cont">자바를 활용한 안드로이드 개발자 과정</span>
+                <div class="subTitle thi">2016 - 2017</div>
+                <span class="cont">디지털컨버전스 UI/US 사물 인터넷: 웹표준 기반 스마트 UI/UX 디자인 양성과정</span>
+            </ul>
+        </div>
+        <div class="works">
+            <div class="title">WORK EXPERIENCE</div>
+            <ul>
+                <div class="subTitle">Web Designer, BEBENINE</div>
+                <p>2018. 02 - 2019. 05 | Seoul</p>
+                <span class="cont">썸네일, 배너, 이벤트 페이지, 상세페이지, 딜페이지, 상품 콘텐츠 제작, 소셜 커머스와 오픈 마켓 관리, 딜페이지 코딩, MD와 소통</span>
+                <div class="subTitle sec">Web Publisher, EASTBLUE</div>
+                <p>2017. 09 - 2017. 12 | Seoul</p>
+                <span class="cont">UI/UX 디자인, Web 제작, App 제작, 유지 보수 및 코드 정리</span>
+            </ul>
+        </div>
+    </section>
+    <!-- work 부분 -->
+    <section class="work">
+        <div class="card">
+            <a href="project/lolketing.html" class="img">
+                <img src="./img/work_lolketing_thumb.jpg" alt="work_lolketing">
+            </a>
+            <div class="text">LoLketing</div>
+        </div>
+        <div class="card">
+            <a href="project/cisuba.html" class="img">
+                <img src="img/work_cisuba_thumb.jpg" alt="work_cisuba">
+            </a>
+            <div class="text">cisuba</div>
+        </div>
+        <div class="card">
+            <a href="project/ohmybank.html" class="img">
+                <img src="img/work_omb_thumb.jpg" alt="work_ohmybank">
+            </a>
+            <div class="text">OH MY BANK</div>
+        </div>
+        <div class="card">
+            <a href="project/sweeter.html" class="img">
+                <img src="./img/work_sweeter_thumb.jpg" alt="work_sweeter">
+            </a>
+            <div class="text">SWEETER</div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="cont fir">
+            <ul>
+                <div class="cont">Park Song Yi</div>
+            </ul>
+        </div>
+        <div class="cont sec">
+            <ul>
+                <a class="cont" href="https://blog.naver.com/iampsi">Blog</a>
+                <a class="cont" href="https://github.com/intersiot/portfolio_intersiot">PF Github</a>
+            </ul>
+        </div>
+        <div class="cont thi">
+            <ul>
+                <div class="cont">E-mail</div>
+                <div class="cont">iampsi@naver.com</div>
+            </ul>
+        </div>
+        <div class="cont fou">
+            <ul>
+                <div class="cont">Seoul, Korea</div>
+                <div class="cont">&#169; 2021 by Song</div>
+            </ul>
+        </div>
+    </footer>
+    <!-- up button -->
+    <div class="btn-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    </div>
+    <!-- 햄버거 메뉴 -->
+    <div class="bg-wrap"></div>
+    <div class="drawer">
+        <ul class="drawer-wrap">
+            <li class="dmenu">HOME</li>
+            <li class="dmenu">ABOUT</li>
+            <li class="dmenu">WORK</li>
+            <li class="dmenu">CONTACT</li>
+        </ul>
+    </div>
+    <!-- JavaScript import -->
+    <script src="js/index.js"></script>
+    <script src="js/hambuger.js"></script>
+</body>
+</html>

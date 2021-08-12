@@ -1,0 +1,121 @@
+/* index header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: block;
+}
+
+header .logo,
+header .hambuger {
+  width: 60px;
+  height: 60px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+header .logo {
+  float: left;
+  margin-left: 50px;
+}
+
+.logo a {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo img {
+  height: 100%;
+}
+
+/* hambuger menu */
+header .hambuger {
+  float: right;
+  margin-right: 50px;
+}
+
+.bar {
+  position: absolute;
+  width: 80%;
+  height: 1.3px;
+  background-color: #999999;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s;
+}
+
+.hambuger:hover .bar {
+  height: 2px;
+}
+
+.first {
+  transform: translate(-50%, -500%);
+}
+
+.second {
+  transform: translate(-50%, -50%);
+}
+
+.third {
+  transform: translate(-50%, 500%);
+}
+
+.slash {
+  width: 80%;
+  transform: translate(-50%, -50%) rotate(-225deg);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.backslash {
+  width: 80%;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+
+/* hambuger -> drawer menu */
+.bg-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #191919;
+  display: none;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(100%);
+  z-index: 998;
+  transition: all 0.5s;
+}
+
+.drawer-on {
+  transform: translateX(0);
+}
+
+.drawer .drawer-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.drawer .dmenu {
+  font-size: 60px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.drawer .dmenu:hover {
+  color: #f2f2f2;
+}
