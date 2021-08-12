@@ -1,0 +1,95 @@
+/* project 반응형 */
+
+@media screen and (max-width: 1020px) {
+  /* middle */
+  .middle {
+    padding: 0 100px;
+    transition: all 0.5s;
+  }
+
+  .middle .layout_img {
+    margin-bottom: 50px;
+  }
+
+  .middle .mission,
+  .middle .concept {
+    margin: 0 70px;
+  }
+
+  .middle .mission {
+    margin-top: 30px;
+  }
+
+  .middle .concept {
+    margin-top: 60px;
+  }
+
+  /* footer */
+  footer {
+    flex-flow: row wrap;
+    padding: 60px 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  /* top */
+  .top {
+    padding: 40px;
+  }
+
+  /* middle */
+  .middle {
+    padding: 0 50px;
+    transition: all 0.5s;
+  }
+
+  .middle .layout_img {
+    margin-bottom: 50px;
+  }
+
+  .middle .mission,
+  .middle .concept {
+    margin: 0 30px;
+  }
+
+  .middle .mission {
+    margin-top: 30px;
+  }
+
+  .middle .concept {
+    margin-top: 60px;
+  }
+
+  /* links */
+  .links .link {
+    padding-left: 120px;
+  }
+
+  /* footer contact */
+  footer {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* top */
+  .top {
+    grid-template-columns: 50% 50%;
+  }
+
+  .top .cont_fir,
+  .top .cont_thi {
+    justify-self: start;
+    margin-bottom: 10px;
+  }
+
+  .top .cont_sec,
+  .top .cont_fou {
+    justify-self: end;
+    margin-bottom: 10px;
+  }
+  /* footer contact */
+  footer {
+    grid-template-columns: 100%;
+  }
+}

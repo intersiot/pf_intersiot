@@ -1,0 +1,35 @@
+/* project header */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  display: block;
+}
+
+header .prev {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 1px solid #9f9fa2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.5s;
+}
+
+header .prev i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #9f9fa2;
+  transition: color 0.5s;
+}
+
+header .prev:hover,
+header .prev:hover i {
+  border-color: rgb(0, 24, 255, 0.7);
+  color: rgb(0, 24, 255, 0.7);
+}
