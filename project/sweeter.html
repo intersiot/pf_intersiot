@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- og태그, favicon -->
+  <!-- Web fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Font Awesome import -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  <!-- CSS import -->
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/project.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Title -->
+  <title>SWEETER | Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <!-- header inner 들어갈 부분 -->
+  </header>
+
+  <section class="top">
+    <!-- 프로젝트 -->
+    <div class="cont_fir">
+      <ul>
+        <div class="title">PROJECT</div>
+        <span class="cont">SWEETER</span>
+      </ul>
+    </div>
+    <!-- 타입: 웹/모바일/애플리케이션 -->
+    <div class="cont_sec">
+      <ul>
+        <div class="title">TYPE</div>
+        <span class="cont">Web</span>
+      </ul>
+    </div>
+    <!-- 롤: 클론코딩/창작코딩 -->
+    <div class="cont_thi">
+      <ul>
+        <div class="title">ROLE</div>
+        <span class="cont">Clone Coding</span>
+      </ul>
+    </div>
+    <!-- 만든 날짜 -->
+    <div class="cont_fou">
+      <ul>
+        <div class="title">YEAR</div>
+        <span class="cont">2021</span>
+      </ul>
+    </div>
+  </section>
+
+  <section class="middle">
+    <div class="layout_img">
+      <div class="top_bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="img">
+        <img src="../img/work_sweeter_thumb.jpg" alt="sweeter_scr" />
+      </div>
+    </div>
+    
+    <div class="mission">
+      <ul>
+        <div class="title">THE MISSION</div>
+        <span class="cont">
+          SWEETER | 세상을 달달하게(이하 스위터) 프로젝트는 스파르타 웹개발 교육의 가장 마지막 강의를 
+          클론코딩 한 것으로 회원가입과 로그인, 포스팅 작성, 프로필 수정 등 SNS의 대표적인 기능들을 
+          사용할 수 있는 웹페이지 입니다.<br /><br />
+          디자인은 bootstrap보다 조금 더 직관적인 Bulma를 사용하여 반응형이 될 수 있도록 했습니다.<br /><br />
+          python으로 api 부분을 작성했고, jinja2와 html, css, js로 템플릿 부분을 작성했습니다.
+        </span>
+      </ul>
+    </div>
+    
+    <!-- project detail -> slider 사용해서 보여주기 -->
+    <!-- Swiper -->
+    <div class="swipe-wrap">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/work_sweeter_swipe_1.jpg" alt="sweeter_img_1" /></div>
+          <div class="swiper-slide"><img src="./img/work_sweeter_swipe_2.jpg" alt="sweeter_img_2" /></div>
+          <div class="swiper-slide"><img src="./img/work_sweeter_swipe_3.jpg" alt="sweeter_img_3" /></div>
+          <div class="swiper-slide"><img src="./img/work_sweeter_swipe_4.jpg" alt="sweeter_img_4" /></div>
+          <div class="swiper-slide"><img src="./img/work_sweeter_swipe_5.jpg" alt="sweeter_img_5" /></div>
+          <div class="swiper-slide"><img src="./img/work_sweeter_swipe_6.jpg" alt="sweeter_img_6" /></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="concept">
+      <ul>
+        <div class="title">THE CONCEPT</div>
+        <span class="cont">
+          SWEETER | 세상을 더 달달하게(이하 스위터)는 클론 코딩한 것을 손본 것으로 DB를 사용한 
+          회원 관리와 로그인, 포스팅 작성 등을 직관적인 디자인으로 보여줄 수 있도록 했습니다.<br /><br />
+          스위터라는 이름을 따라 달달한 디저트가 연상되는 색상들을 사용하였고, 
+          파비콘 외의 아이콘 등에도 디저트 일러스트를 만들어 사용했습니다.
+        </span>
+      </ul>
+    </div>
+  </section>
+
+  <!-- link section -->
+  <section class="links">
+    <div class="link youtube">
+      <h1>show live</h1>
+      <i id="first_i" class="fas fa-long-arrow-alt-left"></i>
+      <a href="sweeter/templates/login.html" target="_blank">go to Web</a>
+      <i id="last_i" class="fas fa-long-arrow-alt-right"></i>
+    </div>
+
+    <div class="link github">
+      <h1>show code</h1>
+      <i id="first_i" class="fas fa-long-arrow-alt-left"></i>
+      <a href="https://github.com/intersiot/web_prac_sweeter" target="_blank">go to github</a>
+      <i id="last_i" class="fas fa-long-arrow-alt-right"></i>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <!-- footer 들어갈 부분 -->
+  </footer>
+
+  <!-- up button -->
+  <div class="btn-top">
+    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+  </div>
+  
+  <!-- Swiper JS -->
+  
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- common JavaScript import -->
+  <script src="/js/index.js"></script>
+  <!-- project slider js import -->
+  <script src="js/common.js"></script>
+</body>
+</html>

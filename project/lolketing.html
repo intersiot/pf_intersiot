@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- og태그, favicon -->
+  <!-- Web fonts link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Font Awesome import -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  <!-- CSS import -->
+  <link rel="stylesheet" href="../css/common.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/project.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Title -->
+  <title>LOLketing | Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <!-- header inner 들어갈 부분 -->
+  </header>
+
+  <section class="top">
+    <!-- 프로젝트 -->
+    <div class="cont_fir">
+      <ul>
+        <div class="title">PROJECT</div>
+        <span class="cont">LOLketing</span>
+      </ul>
+    </div>
+    <!-- 타입: 웹/모바일/애플리케이션 -->
+    <div class="cont_sec">
+      <ul>
+        <div class="title">TYPE</div>
+        <span class="cont">Application</span>
+      </ul>
+    </div>
+    <!-- 롤: 클론코딩/창작코딩 -->
+    <div class="cont_thi">
+      <ul>
+        <div class="title">ROLE</div>
+        <span class="cont">Creative development</span>
+      </ul>
+    </div>
+    <!-- 만든 날짜 -->
+    <div class="cont_fou">
+      <ul>
+        <div class="title">YEAR</div>
+        <span class="cont">2020</span>
+      </ul>
+    </div>
+  </section>
+
+  <section class="middle">
+    <div class="layout_img">
+      <div class="top_bar">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="img">
+        <img src="../img/work_lolketing_thumb.jpg" alt="work_1">
+      </div>
+    </div>
+    
+    <div class="mission">
+      <ul>
+        <div class="title">THE MISSION</div>
+        <span class="cont">
+          LOLketing(이하 롤켓팅) 프로젝트에서 제가 맡은 부분은 한국의 프로 게이머 대회인 LCK에 대한 소개(이하 about LCK)와 LOL 관련 굿즈 판매(이하 Shop) 부분입니다.<br />
+          <br />
+          about LCK는 프래그먼트를 이용하여 레이아웃을 짰고, 탭바와 프래그먼트를 연결하여 탭 메뉴를 선택하거나 화면을 슬라이드 하면 해당 프래그먼트가 나오도록 코딩했습니다. 상단의 
+          '좌석안내'와 '경기일정'을 누르면 해당 액티비티가 나오도록 했고, 그중 '경기일정'은 파이어베이스에서 해당 정보를 끌어와 보여주는 식으로 코딩했습니다.<br />
+          <br />
+          Shop은 라이엇 게임즈에서 공식적으로 판매하는 굿즈를 판매하는 부분으로, 처음에는 라이엇 게임즈 공식몰에서 정보를 크롤링 해와 화면에 뿌려주는 방법으로 코딩을 계획했으나 
+          사용자가 굿즈를 구매한다는 취지와는 맞지 않아 DB에 Shop을 따로 만들어 상품들을 저장하고 불러오는 것으로 바꿨습니다. 또한 이미지만 슬라이드 되는 배너에서 선택하면 해당 
+          상품으로 이동하는 식으로 배너를 구성했고, 상품명이 긴 상품들은 텍스트가 흘러가도록 UI를 구성했습니다.<br />
+          <br />
+          구매 부분은 상품 개수가 카운트 될때마다 금액이 바뀌도록 했고, 주소 변경에는 다음 웹뷰를 사용, 배송 메시지 선택, 약관 동의 여부, 소유 중인 가상머니 확인 등을 넣어 구매 
+          액티비티 부분을 코딩했습니다. 구매 내역 확인은 구매 디테일과 구성이 같아 재활용하려 했으나 테스트 중 오류가 계속 발생하여 동일한 구성의 액티비티를 하나 더 만들었습니다.<br />
+          <br />
+          또한 master id(운영자)로 로그인하면 Shop에 상품을 등록할 수 있도록 했습니다.
+        </span>
+        <div class="download">
+          <i class="fas fa-long-arrow-alt-left"></i>
+          <a href="https://play.google.com/store/apps/details?id=com.ezen.lolketing" target="_blank">download</a>
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </div>
+      </ul>
+    </div>
+    
+    <!-- project detail -> slider 사용해서 보여주기 -->
+    <!-- Swiper -->
+    <div class="swipe-wrap">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/work_lolketing_swipe_1.jpg" alt="롤켓팅이미지1" /></div>
+          <div class="swiper-slide"><img src="./img/work_lolketing_swipe_2.jpg" alt="롤켓팅이미지2" /></div>
+          <div class="swiper-slide"><img src="./img/work_lolketing_swipe_3.jpg" alt="롤켓팅이미지3" /></div>
+          <div class="swiper-slide"><img src="./img/work_lolketing_swipe_4.jpg" alt="롤켓팅이미지4" /></div>
+          <div class="swiper-slide"><img src="./img/work_lolketing_swipe_5.jpg" alt="롤켓팅이미지5" /></div>
+          <div class="swiper-slide"><img src="./img/work_lolketing_swipe_6.jpg" alt="롤켓팅이미지6" /></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="concept">
+      <ul>
+        <div class="title">THE CONCEPT</div>
+        <span class="cont">
+          LOLketing(이하 롤켓팅)은 포트폴리오 용도로 제작된 애플리케이션으로,
+          온라인 게임 League Of Legends(이하 롤)의 국내 프로 대회인 리그 오브 레전드 챔피언스 코리아(이하 LCK)의
+          매표를 위해 만든 앱입니다. 실제로 매표 용도로 인터파크 앱이 사용 중이지만 게임 산업의 발달과 라이엇 게임즈가 타 국가 대회와 마찬가지로
+          국내 대회 또한 프랜차이즈를 도입하였기 때문에 그에 걸맞게 LOL에만 사용되는 매표 앱이 필요하다고 생각했습니다. 다만 현재 국내에서 치르는 대회는
+          LCK 뿐이어서 콘텐츠가 부족하다고 판단, 팀원들과 의견을 협의하여 롤 관련 굿즈 판매, LCK에 참가하는 구단을 소개하고 응원하는 게시판, 대회를 생방송으로 보면서 채팅을 나눌 수 있도록 하는 등의
+          콘텐츠를 추가하였습니다.
+        </span>
+      </ul>
+    </div>
+  </section>
+
+  <!-- link section -->
+  <section class="links">
+    <div class="link youtube">
+      <h1>show live</h1>
+      <i id="first_i" class="fas fa-long-arrow-alt-left"></i>
+      <a href="https://youtu.be/zcCCs5A6gdA" target="_blank">go to youtube</a>
+      <i id="last_i" class="fas fa-long-arrow-alt-right"></i>
+    </div>
+
+    <div class="link github">
+      <h1>show code</h1>
+      <i id="first_i" class="fas fa-long-arrow-alt-left"></i>
+      <a href="https://github.com/shurian44/LOLketing/commits/master" target="_blank">go to github</a>
+      <i id="last_i" class="fas fa-long-arrow-alt-right"></i>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <!-- footer 들어갈 부분 -->
+  </footer>
+
+  <!-- up button -->
+  <div class="btn-top">
+    <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+  </div>
+  
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- common JavaScript import -->
+  <script src="/js/index.js"></script>
+  <!-- project slider js import -->
+  <script src="js/common.js"></script>
+</body>
+</html>
